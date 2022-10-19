@@ -1,41 +1,20 @@
 import Directory from '../../components/directory/directory.component';
-
-
+import { CategoriesContext } from '../../contexts/categories.context';
+//import categories from '../../categories-manager.js'
+import { useContext, useEffect, useState } from 'react';
 
 const Home = () => {
 
-  const categories = [
+  
+  const { categoriesRoute } = useContext(CategoriesContext)
+  const [categories_mangaer,setcategories_manager] = useState(categoriesRoute)
+  //console.log("HomePage", categoriesRoute)
+  useEffect(()=>{
+     setcategories_manager(categoriesRoute)
     
-      {
-        "id": 1,
-        "title": "hats",
-        "imageUrl": "https://i.ibb.co/cvpntL1/hats.png"
-      },
-      {
-        "id": 2,
-        "title": "jackets",
-        "imageUrl": "https://i.ibb.co/px2tCc3/jackets.png"
-      },
-      {
-        "id": 3,
-        "title": "sneakers",
-        "imageUrl": "https://i.ibb.co/0jqHpnp/sneakers.png"
-      },
-      {
-        "id": 4,
-        "title": "womens",
-        "imageUrl": "https://i.ibb.co/GCCdy8t/womens.png"
-      },
-      {
-        "id": 5,
-        "title": "mens",
-        "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
-      }
-    
-    
-  ]
+  },[categoriesRoute])
   return (
-    <Directory categories={categories}/>
+    <Directory categories={categories_mangaer}/>
   )
 }
 

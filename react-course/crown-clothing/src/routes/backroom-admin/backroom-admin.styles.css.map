@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,gBAAgB,EAAE,SAAS;EAC3B,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "backroom-admin.styles.scss"
+    ],
+    "names": [],
+    "file": "backroom-admin.styles.css"
+}

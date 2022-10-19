@@ -1,0 +1,10 @@
+.authentication-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700 px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=authentication.styles.css.map */
