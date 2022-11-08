@@ -15,7 +15,7 @@ const Category = () => {
 
     useEffect(() =>{
         setProducts(categoriesMap[category])
-        //console.log("CACCACAC",categoriesMap)
+     
     },[category,categoriesMap])
 
     return (
